@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.blob-shape {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.blob-shape img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-wrapper {
+  min-height: calc(100vh - 56px);
+  background-image: url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 40px 20px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.72);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.form-box {
+  max-width: 850px;
+}
+
+.service-card {
+  min-height: 245px;
+  position: relative;
+  z-index: 2;
+  margin-top: -120px;
+}
+
+.service-hero {
+  height: 350px;
+}
+
+.register-card img {
+  width: 100%;
+  height: 165px;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .blob-shape {
+    width: 280px;
+    height: 280px;
+  }
+
+  .contact-wrapper {
+    padding: 60px 15px;
+  }
+
+  .form-box {
+    border-radius: 20px !important;
+    flex-direction: column;
+    padding: 15px !important;
+  }
+
+  .form-box input,
+  .form-box button {
+    width: 100%;
+  }
+
+  .service-card {
+    margin-top: -60px;
+  }
+}
